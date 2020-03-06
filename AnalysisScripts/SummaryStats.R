@@ -15,11 +15,12 @@ setwd("~/UIUC/Data/USDA CP42")
 
 #Load libraries
 library(lubridate)
+library(tidyr)
 library(dplyr)
 
 #Read in data
 Veg <- read.csv("Vegetation/USDA CP42 Vegetation.csv", na.strings = c("", "NA"))
-Bees <- read.csv("Bees/2019 USDA CP-42 bees 3-4-2020.csv", na.strings = c("", "NA"))
+Bees <- read.csv("Bees/2019 USDA CP-42 bees 3-6-2020.csv", na.strings = c("", "NA"))
 
 #Add "month" column to Veg data for grouping
 Veg$Date <- mdy(Veg$Date)
@@ -29,7 +30,12 @@ Veg$Month <- month(Veg$Date)
 Bees$Date <- paste(Bees$Year, Bees$Month, Bees$Day, sep = "-") %>%
   ymd()
 
-#Change column headings so they're not so weird
+#Remove "Wasp" and NA entries from Bees
+Bees <- Bees %>%
+  filter(!is.na(Latin.Binomial)) %>%
+  filter(Family != "Wasp")
+
+#Change column headings in Veg so they're not so weird
 colnames(Veg)[which(names(Veg) == "Bare.Ground....")] <- "BareGround"
 colnames(Veg)[which(names(Veg) == "Vegetation....")] <- "Vegetation"
 colnames(Veg)[which(names(Veg) == "No..Ramets")] <- "No.Ramets"
@@ -123,14 +129,12 @@ floralspp_total <- Veg %>%
 #Bee Abundance ####
 #Calculate number of bees collected for each site/date
 no.bees <- Bees %>%
-  filter(!is.na(Latin.Binomial)) %>%
   group_by(Date, Site) %>%
   count(Latin.Binomial) %>%
   summarise(no.bees = sum(n))
 
 #Calculate number of bees collected each month
 no.bees_month <- Bees %>%
-  filter(!is.na(Latin.Binomial)) %>%
   group_by(Month) %>%
   count(Latin.Binomial) %>%
   summarise(no.bees = sum(n))
@@ -138,13 +142,54 @@ no.bees_month <- Bees %>%
 #Bee Species Richness ####
 #Calculate number of bee species collected for each site/date
 no.beespp <- Bees %>%
-  filter(!is.na(Latin.Binomial)) %>%
   group_by(Date, Site) %>%
   summarise(no.beespp = n_distinct(Latin.Binomial))
 
+#Determine which bee species were collected from each site/date
+beespp <- Bees %>%
+  group_by(Date, Site) %>%
+  count(Latin.Binomial)
+
+#Reformat no.beespp from long to wide to determine abundance of each bee species collected from each site/date
+beespp_wide <- beespp %>%
+  spread(Latin.Binomial, n)
+
+#Export as .csv file
+write.csv(beespp_wide, "C:/Users/Morgan/Documents/UIUC/Data/USDA CP42/Bees/CP42 Bees Wide.csv", row.names = FALSE)
+
 #Calculate number of bee species collected each month
 no.beespp_month <- Bees %>%
-  filter(!is.na(Latin.Binomial)) %>%
   group_by(Month) %>%
   summarise(no.beespp = n_distinct(Latin.Binomial))
   
+#Determine which bee species were collected during each month
+beespp_month <- Bees %>%
+  group_by(Month) %>%
+  count(Latin.Binomial)
+
+#Reformat beespp_month from long to wide to determine abundance of each bee species collected each month
+beespp_month_wide <- beespp_month %>%
+  spread(Latin.Binomial, n)
+
+#Data Dictionary ####
+#Number: Number assigned to each specimen
+#Project: Project specimens were collected for
+#Year: Year in which specimens were collected
+#Month: Month in which specimens were collected
+#Day: Day of month on which specimens were collected
+#Date Collected: Date formatted for INHS labels to be created
+#Country: Country in which specimens were collected
+#State: State in which specimens were collected
+#County: County in which specimens were collected
+#Site: Site from which specimens were collected
+#Coordinates: Latitude and longitude from site from which specimens were collected
+#Collection Method: Trap in which specimens were captured
+#Flower Species: If specimens were netted, flower specimen was collected from
+#Collector: Lead of project
+#Identification Number: Unique identifier for each specimen composed of: FundingInstitution-ProjectType-Site-MonthYear-Number
+#Family: Family specimen belongs to
+#Genus: Genus specimen belongs to
+#Species: Species specimen identified to
+#Latin.Binomial: Specific epithet for each specimen: Genus species
+#Sex: Sex specimen identified as
+#Identifier: Person who determined identifications
