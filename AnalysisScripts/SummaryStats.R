@@ -25,6 +25,10 @@ Bees <- read.csv("Bees/2019 USDA CP-42 bees 3-4-2020.csv", na.strings = c("", "N
 Veg$Date <- mdy(Veg$Date)
 Veg$Month <- month(Veg$Date)
 
+#Merge Month Day and Year columns in Bees for grouping
+Bees$Date <- paste(Bees$Year, Bees$Month, Bees$Day, sep = "-") %>%
+  ymd()
+
 #Change column headings so they're not so weird
 colnames(Veg)[which(names(Veg) == "Bare.Ground....")] <- "BareGround"
 colnames(Veg)[which(names(Veg) == "Vegetation....")] <- "Vegetation"
@@ -104,4 +108,43 @@ floralspp <- Veg %>%
   group_by(Date, Site) %>%
   summarise(no.floralspp = n_distinct(Blooming.Species))
 #Only 35 observations because June LEW had 0 blooming species, so the NA is filtered. Morgan to fix this.
+
+#Determine number of floral species in bloom for each month
+floralspp_month <- Veg %>%
+  filter(!is.na(Blooming.Species)) %>%
+  group_by(Month) %>%
+  summarise(no.floralspp = n_distinct(Blooming.Species))
+
+#Determine total number of floral species in bloom during 2019
+floralspp_total <- Veg %>%
+  filter(!is.na(Blooming.Species)) %>%
+  summarise(no.floralspp = n_distinct(Blooming.Species))
+
 #Bee Abundance ####
+#Calculate number of bees collected for each site/date
+no.bees <- Bees %>%
+  filter(!is.na(Latin.Binomial)) %>%
+  group_by(Date, Site) %>%
+  count(Latin.Binomial) %>%
+  summarise(no.bees = sum(n))
+
+#Calculate number of bees collected each month
+no.bees_month <- Bees %>%
+  filter(!is.na(Latin.Binomial)) %>%
+  group_by(Month) %>%
+  count(Latin.Binomial) %>%
+  summarise(no.bees = sum(n))
+
+#Bee Species Richness ####
+#Calculate number of bee species collected for each site/date
+no.beespp <- Bees %>%
+  filter(!is.na(Latin.Binomial)) %>%
+  group_by(Date, Site) %>%
+  summarise(no.beespp = n_distinct(Latin.Binomial))
+
+#Calculate number of bee species collected each month
+no.beespp_month <- Bees %>%
+  filter(!is.na(Latin.Binomial)) %>%
+  group_by(Month) %>%
+  summarise(no.beespp = n_distinct(Latin.Binomial))
+  
