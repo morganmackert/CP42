@@ -177,6 +177,9 @@ no.beespp <- Bees %>%
   group_by(Month, Site) %>%
   summarise(no.beespp = n_distinct(Latin.Binomial))
 
+#Export as .csv file
+#write.csv(no.beespp, "C:/Users/Morgan/Documents/UIUC/Analyses/CP42/Data/Bees/CP42 Number Bee Species by Site & Month.csv", row.names = FALSE, na = "0")
+
 #Determine which bee species were collected from each site/date
 beespp <- Bees %>%
   group_by(Month, Site) %>%
