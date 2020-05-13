@@ -21,7 +21,7 @@ library(dplyr)
 
 #Read in data
 Veg <- read.csv("Vegetation/USDA CP42 Vegetation.csv", na.strings = c("", "NA"))
-Bees <- read.csv("Bees/2019 USDA CP-42 bees 3-21-2020.csv", na.strings = c("", "NA"))
+Bees <- read.csv("Bees/2019 USDA CP-42 bees 5-12-2020.csv", na.strings = c("", "NA"))
 
 #Add "month" column to Veg data for grouping
 Veg$Date <- mdy(Veg$Date)
