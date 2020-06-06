@@ -185,6 +185,7 @@ bapa <- ggplot(beeshabitat,
   geom_smooth(method = "glm",
               color = "black",
               size = 0.5) +
+  facet_wrap(~Month) +
   theme_bw() +
   labs(x = "Agriculture (%)",
        y = "Number of Bees")
@@ -203,6 +204,7 @@ bspa <- ggplot(beeshabitat,
   geom_smooth(method = "glm",
               color = "black",
               size = 0.5) +
+  facet_wrap(~Month) +
   theme_bw() +
   labs(x = "Agriculture (%)",
        y = "Number of Bee Species")
@@ -221,6 +223,7 @@ bapn <- ggplot(beeshabitat,
   geom_smooth(method = "glm",
               color = "black",
               size = 0.5) +
+  facet_wrap(~Month) +
   theme_bw() +
   labs(x = "Natural Land (%)",
        y = "Number of Bees")
@@ -239,6 +242,7 @@ bspn <- ggplot(beeshabitat,
   geom_smooth(method = "glm",
               color = "black",
               size = 0.5) +
+  facet_wrap(~Month) +
   theme_bw() +
   labs(x = "Natural Land (%)",
        y = "Number of Bee Species")
