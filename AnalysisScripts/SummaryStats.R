@@ -21,7 +21,7 @@ library(dplyr)
 library(reshape2)
 
 #Read in data
-Veg <- read.csv("Vegetation/USDA CP42 Vegetation.csv", na.strings = c("", "NA"))
+Veg <- read.csv("Vegetation/USDA CP42 Vegetation.csv", na.strings = c("", "NA"), stringsAsFactors = FALSE)
 Bees <- read.csv("Bees/2019 USDA CP-42 bees 1-8-2021.csv", na.strings = c("", "NA"))
 
 #Add "month" column to Veg data for grouping
@@ -134,10 +134,31 @@ floralspp_total <- Veg %>%
   #filter(!is.na(Blooming.Species)) %>%
   summarise(no.floralspp = n_distinct(Blooming.Species))
 
+#Determine which floral species in bloom by site and month
+floralspp_id <- Veg %>%
+  group_by(Site, Month) %>%
+  count(Blooming.Species)
+
+#Export
+#write.csv(floralspp_id, "C:/Users/Morgan/Documents/UIUC/Analyses/CP42/Data/Vegetation/floralspp_id.csv", row.names = FALSE)
+
+floralspp_id_outside <- Veg %>%
+  group_by(Site, Month) %>%
+  count(Outside.Blooming.Species)
+
+#Export
+#write.csv(floralspp_id_outside, "C:/Users/Morgan/Documents/UIUC/Analyses/CP42/Data/Vegetation/floralspp_id_outside.csv", row.names = FALSE)
+
 #Create presence/absence matrix for blooming species by site and month
 floralspp_presabs <- Veg %>%
   filter(!is.na(Blooming.Species)) %>%
   dcast(formula = Site + Month ~ Blooming.Species)
+
+#Fill NAs with 0
+floralspp_presabs[is.na(floralspp_presabs)] <- 0
+
+#Convert to numeric
+floralspp_presabs <- as.numeric(floralspp_presabs)
 
 #Export as .csv file
 #write.csv(floralspp_presabs, "C:/Users/Morgan/Documents/UIUC/Analyses/CP42/Data/Vegetation/Floral Species Matrix.csv", row.names = FALSE)
@@ -147,24 +168,27 @@ floralspp_presabs_outside <- Veg %>%
   filter(!is.na(Outside.Blooming.Species)) %>%
   dcast(formula = Site + Month ~ Outside.Blooming.Species)
 
+#Fill NAs with 0
+floralspp_presabs_outside[is.na(floralspp_presabs_outside)] <- 0
+
+#Convert to numeric
+floralspp_presabs_outside <- as.numeric(floralspp_presabs_outside)
+
 #Export as .csv file
 #write.csv(floralspp_presabs_outside, "C:/Users/Morgan/Documents/UIUC/Analyses/CP42/Data/Vegetation/Floral Species Matrix Outside Species.csv", row.names = FALSE)
 
 #Merge two matrices
-floralspp_total <- rbind.fill(floralspp_presabs, floralspp_presabs_outside)
+floralspp_presabs_total <- rbind.fill(floralspp_presabs, floralspp_presabs_outside)
 
 #Sort floralspp_total so the species names are in alphabetical order
 floralspp_total <- floralspp_total %>%
   select(Site, Month, everything())
 
 #Fill NAs with 0
-floralspp_total[is.na(floralspp_total)] <- 0
-
-#MORGAN START HERE
-#floralspp_total has duplicate rows (e.g. two rows with BEH month 6). Figure out why.
+floralspp_presabs_total[is.na(floralspp_presabs_total)] <- 0
 
 #Export as .csv file
-#write.csv(floralspp_total, "C:/Users/Morgan/Documents/UIUC/Analyses/CP42/Data/Vegetation/Total Floral Species Matrix.csv", row.names = FALSE)
+#write.csv(floralspp_presabs_total, "C:/Users/Morgan/Documents/UIUC/Analyses/CP42/Data/Vegetation/Total Floral Species Matrix.csv", row.names = FALSE)
 
 #Total Habitat Resources ####
 #-------------------------------------------------------------------#

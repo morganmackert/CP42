@@ -1,0 +1,141 @@
+"Site","Month","Outside.Blooming.Species","n"
+"BEH",6,NA,30
+"BEH",7,NA,60
+"BEH",8,"Ipomoea pandurata",1
+"BEH",8,NA,30
+"BEH",9,"Daucus carota",1
+"BEH",9,"Erigeron strigosus",1
+"BEH",9,NA,24
+"GLAZIK",6,NA,25
+"GLAZIK",7,"Echinacea purpurea",1
+"GLAZIK",7,NA,32
+"GLAZIK",8,"Echinacea purpurea",1
+"GLAZIK",8,"Lactuca ludoviciana",1
+"GLAZIK",8,NA,27
+"GLAZIK",9,"Chamaecrista fasciulata",1
+"GLAZIK",9,"Helianthus tuberosus",1
+"GLAZIK",9,"Silphium integrifolium",1
+"GLAZIK",9,"Symphyotrichum pilosum",1
+"GLAZIK",9,NA,25
+"GRE21",6,NA,25
+"GRE21",7,"Melilotus officinalis",1
+"GRE21",7,NA,25
+"GRE21",8,"Erigeron strigosus",1
+"GRE21",8,NA,24
+"GRE21",9,"Symphyotrichum novae-angliae",1
+"GRE21",9,NA,25
+"GRE29",6,NA,25
+"GRE29",7,"Asclepias tuberosa",1
+"GRE29",7,"Echinacea pallida",1
+"GRE29",7,"Penstemon digitalis",1
+"GRE29",7,"Pycnanthemum virginianum",1
+"GRE29",7,NA,41
+"GRE29",8,"Echinacea purpurea",1
+"GRE29",8,"Erigeron strigosus",1
+"GRE29",8,"Euthamia graminifolia",1
+"GRE29",8,NA,24
+"GRE29",9,"Cirsium vulgare",1
+"GRE29",9,"Coreopsis tinctoria",1
+"GRE29",9,NA,24
+"LEW",6,NA,25
+"LEW",7,"Bellis perennis",1
+"LEW",7,"COSA",1
+"LEW",7,"Erigeron annuus",1
+"LEW",7,"Erigeron strigosus",1
+"LEW",7,"Ipomoea hederacea",1
+"LEW",7,"Packera glabella",1
+"LEW",7,"Solanum carolinense",1
+"LEW",7,"Sonchus asper",1
+"LEW",7,"Taraxacum officinale",1
+"LEW",7,NA,17
+"LEW",8,"Abutilon theophrasti",1
+"LEW",8,"Chamaecrista fasciulata",1
+"LEW",8,"Sonchus asper",1
+"LEW",8,NA,35
+"LEW",9,"Chamaecrista fasciulata",1
+"LEW",9,"Cirsium vulgare",1
+"LEW",9,"Coreopsis tinctoria",1
+"LEW",9,"Daucus carota",1
+"LEW",9,"Hibiscus trionum",1
+"LEW",9,"Taraxacum officinale",1
+"LEW",9,"Verbena stricta",1
+"LEW",9,NA,24
+"PRU",6,NA,38
+"PRU",7,"Asclepias tuberosa",1
+"PRU",7,"Dalea candida",1
+"PRU",7,"Daucus carota",1
+"PRU",7,"Echinacea pallida",1
+"PRU",7,"Echinacea purpurea",1
+"PRU",7,"Heliopsis helianthoides",1
+"PRU",7,"Liatris pycnostachya",1
+"PRU",7,"Penstemon digitalis",1
+"PRU",7,"Potentilla argentea",1
+"PRU",7,"Pycnanthemum tenuifolium",1
+"PRU",7,"Silphium perfoliatum",1
+"PRU",7,"Tradescantia ohiensis",1
+"PRU",7,"Veronicastrum virginicum",1
+"PRU",7,NA,31
+"PRU",8,"Cichorium intybus",1
+"PRU",8,"Cirsium vulgare",1
+"PRU",8,"Daucus carota",1
+"PRU",8,"Echinacea purpurea",1
+"PRU",8,"Erigeron strigosus",1
+"PRU",8,"Heliopsis helianthoides",1
+"PRU",8,"Liatris pycnostachya",1
+"PRU",8,"Monarda fistulosa",1
+"PRU",8,"Parthenium integrifolium",1
+"PRU",8,"Pycnanthemum pilosum",1
+"PRU",8,"Silene regia",1
+"PRU",8,"Silphium perfoliatum",1
+"PRU",8,"Solanum carolinense",1
+"PRU",8,"Symphyotrichum novae-angliae",1
+"PRU",8,"Vernonia fasciculata",1
+"PRU",8,"Veronicastrum virginicum",1
+"PRU",8,NA,15
+"PRU",9,"Cirsium vulgare",1
+"PRU",9,"Daucus carota",1
+"PRU",9,"Desmodium illinoense",1
+"PRU",9,"Erigeron strigosus",1
+"PRU",9,"Eupatorium altissimum",1
+"PRU",9,"Silphium laciniatum",1
+"PRU",9,"Silphium terebinthinaceaum",1
+"PRU",9,NA,29
+"ROG",6,NA,29
+"ROG",7,NA,30
+"ROG",8,"Chamaecrista fasciulata",1
+"ROG",8,"Heliopsis helianthoides",1
+"ROG",8,"Verbena stricta",1
+"ROG",8,NA,25
+"ROG",9,"Euphorbia corollata",1
+"ROG",9,"Lactuca serriola",1
+"ROG",9,NA,32
+"TEN20",6,NA,26
+"TEN20",7,"Asclepias tuberosa",1
+"TEN20",7,"Daucus carota",1
+"TEN20",7,"Echinacea pallida",1
+"TEN20",7,"Echinacea purpurea",1
+"TEN20",7,"Eryngium yuccifolium",1
+"TEN20",7,"Heliopsis helianthoides",1
+"TEN20",7,"Melilotus officinalis",1
+"TEN20",7,"Oenothera guara",1
+"TEN20",7,"Silphium perfoliatum",1
+"TEN20",7,"Trifolium pratense",1
+"TEN20",7,"Verbena stricta",1
+"TEN20",7,NA,26
+"TEN20",8,"Allium cernuum",1
+"TEN20",8,"Daucus carota",1
+"TEN20",8,"Melilotus officinalis",1
+"TEN20",8,"Silphium perfoliatum",1
+"TEN20",8,NA,34
+"TEN20",9,"Cirsium discolor",1
+"TEN20",9,"Daucus carota",1
+"TEN20",9,"Solidago rigida",1
+"TEN20",9,NA,39
+"TOB",6,NA,33
+"TOB",7,"Calystegia sepium",1
+"TOB",7,"Tradescantia virginiana",1
+"TOB",7,NA,39
+"TOB",8,NA,39
+"TOB",9,"Solidago juncea",1
+"TOB",9,"Symphyotrichum laeve",1
+"TOB",9,NA,26

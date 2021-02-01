@@ -1,0 +1,220 @@
+"Site","Month","Blooming.Species","n"
+"BEH",6,"Erigeron strigosus",1
+"BEH",6,"Melilotus officinalis",1
+"BEH",6,"Taraxacum officinale",2
+"BEH",6,"Trifolium pratense",20
+"BEH",6,"Trifolium repens",2
+"BEH",6,NA,4
+"BEH",7,"Asclepias syriaca",3
+"BEH",7,"Erigeron annuus",2
+"BEH",7,"Erigeron strigosus",11
+"BEH",7,"Melilotus alba",5
+"BEH",7,"Monarda fistulosa",1
+"BEH",7,"Pycnanthemum virginianum",1
+"BEH",7,"Ratibida pinnata",6
+"BEH",7,"Rudbeckia hirta",8
+"BEH",7,"Trifolium pratense",23
+"BEH",8,"Calystegia sepium",2
+"BEH",8,"Chamaecrista fasciculata",10
+"BEH",8,"Daucus carota",1
+"BEH",8,"Melilotus alba",1
+"BEH",8,"Ratibida pinnata",5
+"BEH",8,"Trifolium pratense",4
+"BEH",8,NA,8
+"BEH",9,"Chamaecrista fasciculata",2
+"BEH",9,"Melilotus alba",1
+"BEH",9,"Solidago canadensis",9
+"BEH",9,NA,14
+"GLAZIK",6,"Coreopsis lanceolata",1
+"GLAZIK",6,"Penstemon digitalis",7
+"GLAZIK",6,"Taraxacum officinale",1
+"GLAZIK",6,NA,16
+"GLAZIK",7,"Achillea millefolium",1
+"GLAZIK",7,"Asclepias syriaca",1
+"GLAZIK",7,"Cirsium arvense",1
+"GLAZIK",7,"Echinacea purpurea",1
+"GLAZIK",7,"Erigeron strigosus",3
+"GLAZIK",7,"Fragaria virginiana",1
+"GLAZIK",7,"Monarda fistulosa",5
+"GLAZIK",7,"Ratibida pinnata",6
+"GLAZIK",7,"Rudbeckia hirta",4
+"GLAZIK",7,NA,10
+"GLAZIK",8,"Calystegia sepium",1
+"GLAZIK",8,"Chamaecrista fasciculata",1
+"GLAZIK",8,"Cirsium arvense",1
+"GLAZIK",8,"Daucus carota",2
+"GLAZIK",8,"Erigeron strigosus",1
+"GLAZIK",8,"Lactuca canadensis",1
+"GLAZIK",8,"Ratibida pinnata",8
+"GLAZIK",8,"Senna marilandica",1
+"GLAZIK",8,"Silphium integrifolium",1
+"GLAZIK",8,NA,12
+"GLAZIK",9,"Helianthus maximilianii",3
+"GLAZIK",9,"Solidago canadensis",22
+"GLAZIK",9,"Symphyotrichum pilosum",1
+"GLAZIK",9,NA,3
+"GRE21",6,"Erigeron annuus",1
+"GRE21",6,"Melilotus officinalis",1
+"GRE21",6,NA,23
+"GRE21",7,"Erigeron strigosus",3
+"GRE21",7,"Ratibida pinnata",1
+"GRE21",7,"Rudbeckia hirta",7
+"GRE21",7,NA,15
+"GRE21",8,"Chamaecrista fasciculata",7
+"GRE21",8,"Ratibida pinnata",1
+"GRE21",8,NA,17
+"GRE21",9,"Solidago canadensis",25
+"GRE21",9,"Symphyotrichum pilosum",1
+"GRE29",6,"Leucanthemum vulgare",6
+"GRE29",6,"Zizia aurea",2
+"GRE29",6,NA,17
+"GRE29",7,"Cirsium arvense",16
+"GRE29",7,"Erigeron strigosus",7
+"GRE29",7,"Ratibida pinnata",5
+"GRE29",7,"Rudbeckia hirta",13
+"GRE29",7,NA,4
+"GRE29",8,"Chamaecrista fasciculata",5
+"GRE29",8,"Cirsium arvense",4
+"GRE29",8,"Heliopsis helianthoides",1
+"GRE29",8,"Ratibida pinnata",3
+"GRE29",8,"Rudbeckia hirta",2
+"GRE29",8,NA,12
+"GRE29",9,"Chamaecrista fasciculata",5
+"GRE29",9,"Solidago canadensis",12
+"GRE29",9,"Symphyotrichum pilosum",1
+"GRE29",9,NA,8
+"LEW",6,NA,25
+"LEW",7,"Coreopsis lanceolata",1
+"LEW",7,"Hibiscus trionum",2
+"LEW",7,"Rudbeckia hirta",4
+"LEW",7,NA,19
+"LEW",8,"Coreopsis lanceolata",2
+"LEW",8,"Coreopsis tinctoria",1
+"LEW",8,"Daucus carota",1
+"LEW",8,"Heliopsis helianthoides",1
+"LEW",8,"Hibiscus trionum",1
+"LEW",8,"Ipomoea hederacea",7
+"LEW",8,"Rudbeckia hirta",23
+"LEW",8,"Verbena stricta",1
+"LEW",8,NA,1
+"LEW",9,"Coreopsis lanceolata",2
+"LEW",9,"Heliopsis helianthoides",7
+"LEW",9,"Ipomoea hederacea",10
+"LEW",9,"Lactuca canadensis",2
+"LEW",9,"Rudbeckia hirta",2
+"LEW",9,"Symphyotrichum pilosum",2
+"LEW",9,NA,6
+"PRU",6,"Erigeron strigosus",1
+"PRU",6,"Penstemon digitalis",25
+"PRU",6,"Tradescantia virginiana",5
+"PRU",6,"Trifolium pratense",1
+"PRU",6,"Zizia aurea",6
+"PRU",7,"Drymocallis arguta",1
+"PRU",7,"Echinacea pallida",1
+"PRU",7,"Echinacea purpurea",2
+"PRU",7,"Erigeron strigosus",1
+"PRU",7,"Eryngium yuccifolium",3
+"PRU",7,"Heliopsis helianthoides",1
+"PRU",7,"Monarda fistulosa",15
+"PRU",7,"Penstemon digitalis",1
+"PRU",7,"Rudbeckia hirta",13
+"PRU",7,"Verbena stricta",2
+"PRU",7,NA,4
+"PRU",8,"Allium cernuum",1
+"PRU",8,"Chamaecrista fasciculata",5
+"PRU",8,"Eryngium yuccifolium",6
+"PRU",8,"Pycnanthemum tenuifolium",1
+"PRU",8,"Ratibida pinnata",4
+"PRU",8,"Rudbeckia subtomentosa",8
+"PRU",8,"Verbena stricta",1
+"PRU",8,NA,5
+"PRU",9,"Chamaecrista fasciculata",2
+"PRU",9,"Rudbeckia hirta",5
+"PRU",9,"Solidago canadensis",20
+"PRU",9,"Symphyotrichum novae-angliae",5
+"PRU",9,NA,4
+"ROG",6,"Coreopsis lanceolata",1
+"ROG",6,"Packera glabella",6
+"ROG",6,"Penstemon digitalis",3
+"ROG",6,"Taraxacum officinale",4
+"ROG",6,"Trifolium pratense",1
+"ROG",6,"Zizia aurea",5
+"ROG",6,NA,9
+"ROG",7,"Echinacea purpurea",4
+"ROG",7,"Erigeron strigosus",1
+"ROG",7,"Heliopsis helianthoides",4
+"ROG",7,"Penstemon digitalis",1
+"ROG",7,"Rudbeckia hirta",9
+"ROG",7,"Taraxacum officinale",2
+"ROG",7,NA,9
+"ROG",8,"Daucus carota",3
+"ROG",8,"Echinacea purpurea",5
+"ROG",8,"Erigeron strigosus",1
+"ROG",8,"Monarda fistulosa",1
+"ROG",8,"Ratibida pinnata",1
+"ROG",8,"Rudbeckia hirta",4
+"ROG",8,"Rudbeckia triloba",2
+"ROG",8,"Verbesina helianthoides",1
+"ROG",8,NA,10
+"ROG",9,"Chamaecrista fasciculata",11
+"ROG",9,"Daucus carota",1
+"ROG",9,"Rudbeckia triloba",2
+"ROG",9,"Solidago juncea",6
+"ROG",9,"Solidago rigida",5
+"ROG",9,"Symphyotrichum pilosum",1
+"ROG",9,NA,8
+"TEN20",6,"Penstemon digitalis",10
+"TEN20",6,"STAN",3
+"TEN20",6,"Tradescantia ohiensis",1
+"TEN20",6,"Trifolium repens",1
+"TEN20",6,NA,11
+"TEN20",7,"Erigeron strigosus",10
+"TEN20",7,"Eryngium yuccifolium",1
+"TEN20",7,"Monarda fistulosa",3
+"TEN20",7,"Ratibida pinnata",6
+"TEN20",7,"Rudbeckia hirta",10
+"TEN20",7,NA,7
+"TEN20",8,"Chamaecrista fasciculata",24
+"TEN20",8,"Desmodium canadense",1
+"TEN20",8,"Echinacea purpurea",1
+"TEN20",8,"Erigeron strigosus",5
+"TEN20",8,"Eryngium yuccifolium",2
+"TEN20",8,"Ratibida pinnata",1
+"TEN20",8,"Symphyotrichum novae-angliae",2
+"TEN20",8,"Verbena stricta",1
+"TEN20",8,NA,1
+"TEN20",9,"Chamaecrista fasciculata",13
+"TEN20",9,"Erigeron strigosus",4
+"TEN20",9,"Solidago canadensis",14
+"TEN20",9,"Symphyotrichum novae-angliae",1
+"TEN20",9,"Symphyotrichum oolentangiensis",2
+"TEN20",9,"Symphyotrichum pilosum",8
+"TOB",6,"Penstemon digitalis",22
+"TOB",6,"Tradescantia virginiana",2
+"TOB",6,"Trifolium pratense",8
+"TOB",6,NA,1
+"TOB",7,"Erigeron strigosus",6
+"TOB",7,"Melilotus alba",4
+"TOB",7,"Monarda fistulosa",2
+"TOB",7,"Pycnanthemum virginianum",8
+"TOB",7,"Ratibida pinnata",2
+"TOB",7,"Sonchus asper",1
+"TOB",7,"Tradescantia ohiensis",1
+"TOB",7,"Trifolium pratense",13
+"TOB",7,NA,4
+"TOB",8,"Chamaecrista fasciculata",13
+"TOB",8,"Pycnanthemum tenuifolium",1
+"TOB",8,"Ratibida pinnata",6
+"TOB",8,"Rudbeckia hirta",1
+"TOB",8,"Solidago rigida",2
+"TOB",8,"Symphyotrichum laeve",1
+"TOB",8,"Trifolium pratense",13
+"TOB",8,NA,2
+"TOB",9,"Chamaecrista fasciculata",3
+"TOB",9,"Melilotus alba",1
+"TOB",9,"Solidago canadensis",1
+"TOB",9,"Solidago rigida",5
+"TOB",9,"Symphyotrichum novae-angliae",1
+"TOB",9,"Symphyotrichum oolentangiensis",1
+"TOB",9,"Symphyotrichum pilosum",1
+"TOB",9,NA,15
