@@ -121,7 +121,7 @@ floralspp <- Veg %>%
   filter(!is.na(Blooming.Species)) %>%
   group_by(Month, Site) %>%
   summarise(no.floralspp = n_distinct(Blooming.Species))
-#Only 35 observations because June LEW had 0 blooming species, so the NA is filtered. Morgan to fix this.
+#Only 35 observations because June LEW had 0 blooming species, so the NA is filtered.
 
 #Determine number of floral species in bloom for each month
 floralspp_month <- Veg %>%
@@ -134,19 +134,20 @@ floralspp_total <- Veg %>%
   #filter(!is.na(Blooming.Species)) %>%
   summarise(no.floralspp = n_distinct(Blooming.Species))
 
-#Determine which floral species in bloom by site and month
+#Determine which floral species in bloom within transects by site and month
 floralspp_id <- Veg %>%
   group_by(Site, Month) %>%
   count(Blooming.Species)
 
-#Export
+#Export as .csv file
 #write.csv(floralspp_id, "C:/Users/Morgan/Documents/UIUC/Analyses/CP42/Data/Vegetation/floralspp_id.csv", row.names = FALSE)
 
+#Determine which floral species in bloom outside transects by site and month
 floralspp_id_outside <- Veg %>%
   group_by(Site, Month) %>%
   count(Outside.Blooming.Species)
 
-#Export
+#Export as .cvs file
 #write.csv(floralspp_id_outside, "C:/Users/Morgan/Documents/UIUC/Analyses/CP42/Data/Vegetation/floralspp_id_outside.csv", row.names = FALSE)
 
 #Create presence/absence matrix for blooming species by site and month
@@ -181,7 +182,7 @@ floralspp_presabs_outside <- as.numeric(floralspp_presabs_outside)
 floralspp_presabs_total <- rbind.fill(floralspp_presabs, floralspp_presabs_outside)
 
 #Sort floralspp_total so the species names are in alphabetical order
-floralspp_total <- floralspp_total %>%
+floralspp_presabs_total <- floralspp_presabs_total %>%
   select(Site, Month, everything())
 
 #Fill NAs with 0
